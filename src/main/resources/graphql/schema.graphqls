@@ -1,0 +1,40 @@
+type ManicureClient {
+    id:Int!
+    name: String
+    surname: String
+    email: String
+    phoneNumber: Int
+    customerReview: String
+    amountSpent: Int
+    discount: Int
+}
+
+type Query {
+    getAllClients: [ManicureClient!]!
+    getClientById(id: Int!): ManicureClient
+}
+
+type Mutation {
+    saveClient(
+        name: String!
+        surname: String
+        email: String
+        phoneNumber: Int
+        customerReview: String
+        amountSpent: Int
+        discount: Int
+    ): ManicureClient
+
+    updateClient(
+        id:Int!
+        name: String
+        surname: String
+        email: String
+        phoneNumber: Int
+        customerReview: String
+        amountSpent: Int
+        discount: Int
+    ): ManicureClient
+
+    deleteClientById(id: Int!): Boolean
+}
