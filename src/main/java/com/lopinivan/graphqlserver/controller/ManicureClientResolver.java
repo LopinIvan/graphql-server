@@ -35,7 +35,7 @@ public class ManicureClientResolver {
             @Argument String name,
             @Argument String surname,
             @Argument String email,
-            @Argument int phoneNumber,
+            @Argument String phoneNumber,
             @Argument String customerReview,
             @Argument int amountSpent,
             @Argument int discount) {
@@ -57,7 +57,7 @@ public class ManicureClientResolver {
             @Argument String name,
             @Argument String surname,
             @Argument String email,
-            @Argument int phoneNumber,
+            @Argument String phoneNumber,
             @Argument String customerReview,
             @Argument int amountSpent,
             @Argument int discount) {

@@ -3,7 +3,7 @@ type ManicureClient {
     name: String
     surname: String
     email: String
-    phoneNumber: Int
+    phoneNumber: String
     customerReview: String
     amountSpent: Int
     discount: Int
@@ -19,7 +19,7 @@ type Mutation {
         name: String!
         surname: String
         email: String
-        phoneNumber: Int
+        phoneNumber: String
         customerReview: String
         amountSpent: Int
         discount: Int

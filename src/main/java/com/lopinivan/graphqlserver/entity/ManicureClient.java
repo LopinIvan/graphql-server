@@ -22,8 +22,8 @@ public class ManicureClient {
     String surname;
     @Column(name = "clt_email")
     String email;
-    @Column(name = "clt_phone_number")
-    int phoneNumber;
+    @Column(name = "clt_phone_number", unique = true)
+    String phoneNumber;
     @Column(name = "clt_customer_review")
     String customerReview;
     @Column(name = "clt_amount_spent")
